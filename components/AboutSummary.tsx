@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AboutSummary() {
   return (
-    <section className="w-full min-h-screen px-6 md:px-12 lg:px-20 py-16 bg-yellow-600/10">
+    <section className="w-full lg:min-h-screen h-[80vh] px-6 md:px-12 lg:px-20 py-16 bg-yellow-600/10">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
         {/* Left side */}
         <div className="flex flex-col md:w-1/2 space-y-6">

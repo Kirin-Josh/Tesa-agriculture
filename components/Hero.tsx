@@ -5,7 +5,7 @@ import { TypewriterEffect } from './ui/TypewriterEffect'
 
 export default function Hero() {
   return (
-    <section className="w-full h-full relative">
+    <section className="h-[70vh] md:h-[80vh] lg:h-screen w-full relative">
       <ImagesSlider
         className="absolute inset-0 h-full w-full"
         images={HeroImage}
