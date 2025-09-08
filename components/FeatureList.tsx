@@ -3,7 +3,7 @@ import { Leaf, Users, FlaskConical, Sprout } from "lucide-react";
 
 export default function FeatureList() {
   return (
-    <section className="w-full min-h-screen px-6 md:px-12 lg:px-20 py-16 bg-white">
+    <section className="w-full min-h-screen px-6 md:px-12 lg:px-20 py-16">
       <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-20">
         {/* Left Section */}
         <div className="flex flex-col md:w-1/2 space-y-6">
