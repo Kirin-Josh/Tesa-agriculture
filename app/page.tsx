@@ -4,10 +4,10 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="h-[70vh] md:h-[80vh] lg:h-screen">
+    <div>
       <Hero />
       <AboutSummary />
       <FeatureList />
-    </main>
+    </div>
   );
 }
