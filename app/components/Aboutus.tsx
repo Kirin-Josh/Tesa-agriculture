@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaGlobe, FaHandshake, FaLeaf, FaLightbulb } from "react-icons/fa";
 
 export default function Aboutus() {
   return (
@@ -40,30 +41,46 @@ export default function Aboutus() {
       </section>
 
       <section className="w-full relative bg-yellow-50 py-12">
-
         <div className="relative flex-col items-center justify-center max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           {/* Identity + Values */}
           <div className="text-center space-y-6 mx-auto">
             <p className="text-sm uppercase tracking-widest font-semibold text-gray-800">
               About Us
             </p>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">
+            <h2 className="text-3xl font-extrabold text-gray-900">
               Our Identity, Vision and Values
             </h2>
 
             {/* green pill box */}
-            <div className="navbarItems rounded-2xl py-8 md:w-[40rem] md:h-[13rem] px-6 mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-white mx-auto relative z-100">
+            <div className="navbarItems rounded-2xl py-4 md:py-8 w-[20rem] md:w-[40rem] h-[10rem] md:h-[13rem] px-6 mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-white mx-auto relative z-100">
               {[
-                { title: "Freshness", icon: "🍃" },
-                { title: "Trust & Transparency", icon: "🤝" },
-                { title: "Sustainability", icon: "🌍" },
-                { title: "Innovation", icon: "💡" },
+                {
+                  title: "Freshness",
+                  icon: <FaLeaf className="text-xl md:text-3xl" />,
+                  position: "absolute top-2 md:top-4 left-1 md:left-6",
+                },
+                {
+                  title: "Trust & Transparency",
+                  icon: <FaHandshake className="text-xl md:text-3xl" />,
+                    position: "absolute top-2 md:top-4 right-10 md:right-4",
+                  width: "max-w-[1rem] md:max-w-full"
+                },
+                {
+                  title: "Sustainability",
+                  icon: <FaGlobe className="text-xl md:text-3xl" />,
+                  position: "absolute bottom-0 md:bottom-5 left-39 md:left-30",
+                },
+                {
+                  title: "Innovation",
+                  icon: <FaLightbulb className="text-xl md:text-3xl" />,
+                  position: "absolute bottom-0 md:bottom-5 right-46",
+                },
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center justify-center space-y-2"
+                  className={`itemCard p-4 rounded-xl flex flex-col items-center justify-center ${item.position} ${item.width}`}
                 >
-                  <span className="text-3xl">{item.icon}</span>
+                  <span className="text-xl md:text-3xl">{item.icon}</span>
                   <p className="font-semibold">{item.title}</p>
                 </div>
               ))}
@@ -71,7 +88,7 @@ export default function Aboutus() {
           </div>
 
           {/* Vision & Mission */}
-          <div className="bg-white rounded-2xl shadow-md py-16 md:px-12 px-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left md:-mt-12">
+          <div className="bg-white rounded-2xl shadow-md py-16 md:px-12 px-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left md:-mt-12 -mt-10">
             <div className="border-b md:border-b-0 md:border-r border-gray-200 pr-0 md:pr-8 pb-6 md:pb-0">
               <h3 className="font-bold text-lg flex items-center justify-center md:justify-start gap-2">
                 <span className="text-green-600">🎯</span> Vision
