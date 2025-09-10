@@ -21,7 +21,7 @@ export default function AboutSummary() {
             that benefit both people and the planet.
           </p>
           <a href="/about-us">
-            <button className="bg-yellow-600 text-white hover:bg-yellow-700 shadow-md rounded-md font-medium transition py-3 px-6 mt-4 duration-200 ease-in-out cursor-pointer">
+            <button className="bg-[#D4A017] text-white hover:bg-yellow-700 shadow-md rounded-md font-medium transition py-3 px-6 mt-4 duration-200 ease-in-out cursor-pointer">
               Learn More
             </button>
           </a>

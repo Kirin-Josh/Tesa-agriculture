@@ -36,17 +36,17 @@ export default function Testimonials() {
     <section className="w-full min-h-screen px-6 md:px-12 lg:px-20 py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-          Voices from Our Community
+          Customer Testimonials
         </h2>
 
         {/* Carousel container */}
         <div className="overflow-hidden">
           <motion.div
             className="flex gap-6"
-            animate={{ x: `-${(index * 100) / perView}%` }} // <-- divide by perView
+            animate={{ x: `-${(index * 100) / perView}%` }} 
             transition={{ type: "spring", stiffness: 60, damping: 20 }}
             style={{
-              width: `${(testimonials.length * 100) / perView}%`, // <-- scale by perView
+              width: `${(testimonials.length * 100) / perView}%`, 
             }}
           >
             {testimonials.map((t, i) => (
