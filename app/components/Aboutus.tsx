@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaGlobe, FaHandshake, FaLeaf, FaLightbulb } from "react-icons/fa";
+import Services from "./Services";
 
 export default function Aboutus() {
   return (
@@ -62,8 +63,8 @@ export default function Aboutus() {
                 {
                   title: "Trust & Transparency",
                   icon: <FaHandshake className="text-xl md:text-3xl" />,
-                    position: "absolute top-2 md:top-4 right-10 md:right-4",
-                  width: "max-w-[1rem] md:max-w-full"
+                  position: "absolute top-2 md:top-4 right-10 md:right-4",
+                  width: "max-w-[1rem] md:max-w-full",
                 },
                 {
                   title: "Sustainability",
@@ -108,6 +109,8 @@ export default function Aboutus() {
               </p>
             </div>
           </div>
+
+          <Services />
         </div>
       </section>
     </>
