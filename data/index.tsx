@@ -20,36 +20,43 @@ export const HeroTexts = [
   },
 ];
 
-type Testimonial = {
+export interface Testimonial {
+  id: string;
   name: string;
-  role: string;
-  text: string;
-  avatar: string;
-};
+  testimonial: string;
+  rating: number;
+  date: string;
+}
 
-export const testimonials: Testimonial[] = [
+export const projects = [
   {
-    name: "Grace Njeri",
-    role: "Smallholder Farmer, Kenya",
-    text: "Before joining this initiative, I struggled with low yields. Now, with better training and access to modern techniques, my harvest has doubled and I can send my children to school.",
-    avatar: "/avatars/grace.jpg",
+    title: "Conception et mise en oeuvre",
+    description:
+      "Expert guidance in agricultural consulting, farm management, and innovative crop research.",
   },
   {
-    name: "Abdoulaye Traoré",
-    role: "Community Leader, Mali",
-    text: "This program has brought hope to our village. Farmers now share knowledge and resources, and our young people see agriculture as a future, not a burden.",
-    avatar: "/avatars/abdoulaye.jpg",
+    title: "Conseils et suivi des projets",
+    description:
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
   },
   {
-    name: "Maria Lopez",
-    role: "AgriTech Entrepreneur, Colombia",
-    text: "What impressed me most is how technology is being used to empower small farmers. It’s inspiring to see sustainability and innovation working hand in hand.",
-    avatar: "/avatars/maria.jpg",
+    title: "Gestions des projets agricole",
+    description:
+      "A multinational technology company that specializes in Internet-related services and products.",
   },
   {
-    name: "Samuel Johnson",
-    role: "Organic Farmer, Ghana",
-    text: "Switching to eco-friendly practices felt risky at first, but the training I received here proved it works. My farm is thriving, and so is the land I work on.",
-    avatar: "/avatars/samuel.jpg",
+    title: "Evaluation des sites",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+  },
+  {
+    title: "Formation et Assistance",
+    description:
+      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+  },
+  {
+    title: "Conception des projets Agricoles",
+    description:
+      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
   },
 ];
