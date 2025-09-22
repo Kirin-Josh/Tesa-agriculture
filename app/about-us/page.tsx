@@ -3,6 +3,7 @@ import HeroAbout from "../components/HeroAbout";
 import Aboutus from "../components/Aboutus";
 import Testimonials from "@/components/Testimonials";
 import { Testimonial } from "@/data";
+import Timeline from "../components/Timeline";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -27,6 +28,7 @@ export default async function AboutUs() {
     <div>
       <HeroAbout />
       <Aboutus />
+      <Timeline />
       <Testimonials testimonials={testimonials} />
     </div>
   );

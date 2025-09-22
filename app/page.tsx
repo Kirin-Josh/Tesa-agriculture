@@ -3,19 +3,20 @@ import AboutSummary from "@/components/AboutSummary";
 import FeatureList from "@/components/FeatureList";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
+import { Testimonial } from "@/data";
 
-async function fetchTestimonials() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL;
-  const res = await fetch(`${API_URL}/testimonials`);
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+async function fetchTestimonials(): Promise<Testimonial[]> {
+  const res = await fetch(`${API_URL}/testimonials`, { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to fetch testimonials");
   const testimonialsRaw = await res.json();
-  return testimonialsRaw.map((t: any) => ({
-    id: t.id,
+  return testimonialsRaw.map((t: any, i: number) => ({
+    id: t.id ?? String(i),
     name: t.name,
     testimonial: t.testimonial,
     rating: t.rating,
     date: t.date,
-    avatar: `https://api.adorable.io/avatars/48/${t.id}.png`,
   }));
 }
 

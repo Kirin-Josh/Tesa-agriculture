@@ -1,3 +1,5 @@
+import { FaGlobeAmericas, FaLeaf, FaSeedling, FaTractor } from "react-icons/fa";
+
 export const navItems = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/about-us" },
@@ -58,5 +60,40 @@ export const projects = [
     title: "Conception des projets Agricoles",
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+  },
+];
+
+export const timelineEvents = [
+  {
+    year: "1985",
+    title: "Humble Beginnings",
+    description:
+      "Started as a small family farm with traditional farming methods and a vision for sustainable agriculture.",
+    icon: FaSeedling,
+    color: "text-green-600",
+  },
+  {
+    year: "1995",
+    title: "Mechanization Era",
+    description:
+      "Invested in modern farming equipment and machinery to increase productivity and efficiency.",
+    icon: FaTractor,
+    color: "text-blue-600",
+  },
+  {
+    year: "2010",
+    title: "Organic Revolution",
+    description:
+      "Transitioned to organic farming practices, becoming certified organic and focusing on environmental stewardship.",
+    icon: FaLeaf,
+    color: "text-emerald-600",
+  },
+  {
+    year: "2020",
+    title: "Global Expansion",
+    description:
+      "Expanded operations internationally, establishing partnerships across three continents and pioneering sustainable agriculture.",
+    icon: FaGlobeAmericas,
+    color: "text-indigo-600",
   },
 ];
