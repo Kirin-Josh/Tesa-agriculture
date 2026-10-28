@@ -4,6 +4,8 @@ import type { Locale } from "@/i18n/routing";
 import Header from "@/components/Header";
 import HeroB from "@/components/HeroB";
 import TwoPaths from "@/components/TwoPaths";
+import Products from "@/components/Products";
+import Consulting from "@/components/Consulting";
 
 export default function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -15,6 +17,8 @@ export default function Home({ params }: PageProps<"/[locale]">) {
       <main id="accueil">
         <HeroB />
         <TwoPaths />
+        <Products />
+        <Consulting />
       </main>
     </>
   );
