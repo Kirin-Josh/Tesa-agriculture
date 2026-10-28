@@ -60,15 +60,13 @@
         "name": "Greenhouse bell peppers",
         "tag": "Greenhouse",
         "alt": "Pepper plants in the greenhouse",
-        "desc": "Grown under cover for consistent quality, picked ripe.",
-        "info": "[Varieties · packaging · price or “on quote”]"
+        "desc": "Grown under cover for consistent quality, picked ripe."
       },
       "watermelons": {
         "name": "Watermelons",
         "tag": "Open field",
         "alt": "Watermelons in the field",
-        "desc": "Grown in the open field and harvested in season, retail or wholesale.",
-        "info": "[Harvest season · retail / wholesale]"
+        "desc": "Grown in the open field and harvested in season, retail or wholesale."
       }
     }
   },
@@ -142,7 +140,6 @@
     "eb": "About us",
     "h2": "A word from the founder",
     "p": "TESA Enterprises Agro-Consulting Services is a farming company based in Yaoundé. We grow our own crops, in greenhouses and open fields, and put that experience to work for people starting farming projects.",
-    "photo": "[Founder photo]",
     "quote": "[A short message from the founder: why he started TESA, what he wants for his clients]",
     "sign": "[Founder name] · [Title], TESA Enterprises",
     "valuesLabel": "Our values",
@@ -165,7 +162,8 @@
         "title": "We train",
         "desc": "Hands-on training so your teams master good practices."
       }
-    }
+    },
+    "photoAlt": "The founder of TESA Enterprises in the pepper greenhouse"
   },
   "avis": {
     "h2": "They trust us",
@@ -192,8 +190,7 @@
     "errPhone": "Please enter your phone number.",
     "rows": {
       "phone": {
-        "k": "Phone",
-        "v": "[+237 … · +237 …]"
+        "k": "Phone"
       },
       "email": {
         "k": "Email",

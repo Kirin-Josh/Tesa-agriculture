@@ -4,9 +4,13 @@
 export const site = {
   name: "TESA Enterprises Agro-Consulting Services",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  // [À confirmer par le propriétaire] digits only, with country code, e.g. "2376XXXXXXXX".
-  // While empty, WhatsApp links open WhatsApp with the message and let the visitor pick the recipient.
-  whatsappNumber: "",
+  // Digits only, with country code (wa.me format).
+  whatsappNumber: "237680569614",
+  // Shown in the contact list as tel: links; the first one is also on WhatsApp.
+  phones: [
+    { tel: "+237680569614", label: "+237 680 56 96 14" },
+    { tel: "+237697237534", label: "+237 697 23 75 34" },
+  ],
   // [À confirmer] e.g. "contact@…"; not shown in JSON-LD until set.
   email: "",
   // [À confirmer] full Facebook page URL.

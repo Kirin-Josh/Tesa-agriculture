@@ -60,15 +60,13 @@
         "name": "Poivrons de serre",
         "tag": "Sous serre",
         "alt": "Poivrons sur pied dans la serre",
-        "desc": "Cultivés sous serre pour une qualité régulière, récoltés à maturité.",
-        "info": "[Variétés · conditionnement · prix ou « sur devis »]"
+        "desc": "Cultivés sous serre pour une qualité régulière, récoltés à maturité."
       },
       "watermelons": {
         "name": "Pastèques",
         "tag": "Plein champ",
         "alt": "Pastèques au champ",
-        "desc": "Cultivées en plein champ et récoltées en saison, au détail ou en gros.",
-        "info": "[Saison de récolte · vente au détail / en gros]"
+        "desc": "Cultivées en plein champ et récoltées en saison, au détail ou en gros."
       }
     }
   },
@@ -142,7 +140,6 @@
     "eb": "À propos",
     "h2": "Le mot du fondateur",
     "p": "TESA Enterprises Agro-Consulting Services est une entreprise agricole basée à Yaoundé. Nous produisons nous-mêmes, sous serre et en plein champ, et nous mettons cette expérience au service des porteurs de projets agricoles.",
-    "photo": "[Photo du fondateur]",
     "quote": "[Un court message du fondateur : pourquoi il a créé TESA, ce qu’il veut apporter à ses clients]",
     "sign": "[Nom du fondateur] · [Titre], TESA Enterprises",
     "valuesLabel": "Nos valeurs",
@@ -165,7 +162,8 @@
         "title": "Nous formons",
         "desc": "Une formation sur le terrain pour que vos équipes maîtrisent les bonnes pratiques."
       }
-    }
+    },
+    "photoAlt": "Le fondateur de TESA Enterprises dans la serre de poivrons"
   },
   "avis": {
     "h2": "Ils nous font confiance",
@@ -192,8 +190,7 @@
     "errPhone": "Indiquez votre numéro de téléphone.",
     "rows": {
       "phone": {
-        "k": "Téléphone",
-        "v": "[+237 … · +237 …]"
+        "k": "Téléphone"
       },
       "email": {
         "k": "E-mail",

@@ -14,9 +14,14 @@ export default function AboutB() {
       <div className="mx-auto flex max-w-[1240px] flex-col gap-14 px-10 py-24 phone:px-5 phone:py-16">
         <div className="flex flex-wrap items-center gap-14">
           <figure className="reveal relative m-0 min-w-[260px] flex-[0_1_380px] phone:mb-6 phone:basis-full">
-            {/* [Photo du fondateur] — replace this box with <Image> once the owner sends the photo */}
-            <div className="flex aspect-[4/5] items-center justify-center rounded-[28px] border-2 border-dashed border-line-strong bg-cream p-5 text-center text-[15px] text-muted">
-              {t("photo")}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-photo">
+              <Image
+                src="/founder.jpg"
+                alt={t("photoAlt")}
+                fill
+                sizes="(max-width: 640px) 100vw, 380px"
+                className="object-cover object-top"
+              />
             </div>
             <div className="zoom pop absolute -right-7 -bottom-7 aspect-square w-[46%] overflow-hidden rounded-[22px] border-6 border-white bg-photo phone:-right-2 phone:-bottom-[18px] phone:w-[44%]">
               <Image src={photos.harvest} alt={alt("harvest")} fill sizes="200px" className="object-cover" />

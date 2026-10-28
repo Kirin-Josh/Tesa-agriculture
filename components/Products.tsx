@@ -40,7 +40,6 @@ export default function Products() {
                 <div className="flex grow flex-col gap-3 p-6">
                   <h3 className="m-0 font-serif text-[28px] font-semibold text-forest-deep">{name}</h3>
                   <p className="m-0 text-base leading-[1.6] text-ink-2">{t(`items.${p.id}.desc`)}</p>
-                  <p className="m-0 text-sm text-muted">{t(`items.${p.id}.info`)}</p>
                   <WhatsAppLink
                     message={t("orderMsg", { product: name })}
                     className="mt-auto self-start px-5 py-3.5 text-[15px]"

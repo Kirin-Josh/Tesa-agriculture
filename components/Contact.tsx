@@ -25,7 +25,16 @@ export default function Contact() {
               <div key={r} className="contents">
                 <dt className="font-bold text-forest">{t(`rows.${r}.k`)}</dt>
                 <dd className="m-0 text-ink-2">
-                  {r === "facebook" && site.facebookUrl ? (
+                  {r === "phone" ? (
+                    site.phones.map((p, i) => (
+                      <span key={p.tel}>
+                        {i > 0 && " · "}
+                        <a href={`tel:${p.tel}`} className="whitespace-nowrap">
+                          {p.label}
+                        </a>
+                      </span>
+                    ))
+                  ) : r === "facebook" && site.facebookUrl ? (
                     <a href={site.facebookUrl} target="_blank" rel="noopener noreferrer">
                       {t(`rows.${r}.v`)}
                       <span className="sr-only"> {t("newTab")}</span>
