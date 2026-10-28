@@ -54,7 +54,7 @@
     "order": "Commander sur WhatsApp",
     "orderMsg": "Bonjour, je souhaite commander : {product}",
     "seasonT": "Cultures de saison",
-    "seasonD": "[Autres produits disponibles selon la saison : à compléter]",
+    "seasonD": "D’autres récoltes arrivent selon la saison. Demandez-nous ce qui est disponible en ce moment.",
     "items": {
       "peppers": {
         "name": "Poivrons de serre",
@@ -68,7 +68,9 @@
         "alt": "Pastèques au champ",
         "desc": "Cultivées en plein champ et récoltées en saison, au détail ou en gros."
       }
-    }
+    },
+    "seasonCta": "Voir les disponibilités",
+    "seasonMsg": "Bonjour, quels produits sont disponibles en ce moment ?"
   },
   "cons": {
     "eb": "Conseil agricole",
@@ -140,8 +142,8 @@
     "eb": "À propos",
     "h2": "Le mot du fondateur",
     "p": "TESA Enterprises Agro-Consulting Services est une entreprise agricole basée à Yaoundé. Nous produisons nous-mêmes, sous serre et en plein champ, et nous mettons cette expérience au service des porteurs de projets agricoles.",
-    "quote": "[Un court message du fondateur : pourquoi il a créé TESA, ce qu’il veut apporter à ses clients]",
-    "sign": "[Nom du fondateur] · [Titre], TESA Enterprises",
+    "quote": "Quand j’ai commencé, il y avait beaucoup de théorie, mais peu d’aide concrète de la part de ceux qui cultivent vraiment. Chez TESA, nous cultivons d’abord, et nous mettons cette expérience à votre service. Je ne veux pas être seulement votre consultant, mais votre partenaire jusqu’à la récolte.",
+    "sign": "Tchongo Emmanuel Stephen · Fondateur et CEO, TESA Enterprises",
     "valuesLabel": "Nos valeurs",
     "values": [
       "Fraîcheur",
@@ -163,7 +165,7 @@
         "desc": "Une formation sur le terrain pour que vos équipes maîtrisent les bonnes pratiques."
       }
     },
-    "photoAlt": "Le fondateur de TESA Enterprises dans la serre de poivrons"
+    "photoAlt": "Tchongo Emmanuel Stephen, fondateur de TESA Enterprises, dans la serre de poivrons"
   },
   "avis": {
     "h2": "Ils nous font confiance",
@@ -202,7 +204,7 @@
       },
       "address": {
         "k": "Adresse",
-        "v": "Yaoundé, Cameroun [quartier / lieu-dit]"
+        "v": "Yaoundé, Cameroun"
       }
     },
     "needs": {

@@ -53,6 +53,9 @@ export default function Products() {
           <article className="reveal flex min-w-0 flex-[1_1_280px] flex-col justify-center gap-2.5 rounded-[26px] border-2 border-dashed border-line-strong p-7">
             <h3 className="m-0 font-serif text-2xl font-semibold text-forest-deep">{t("seasonT")}</h3>
             <p className="m-0 text-[15px] leading-[1.6] text-muted">{t("seasonD")}</p>
+            <WhatsAppLink message={t("seasonMsg")} className="mt-2 self-start px-5 py-3.5 text-[15px]">
+              {t("seasonCta")}
+            </WhatsAppLink>
           </article>
         </div>
       </div>

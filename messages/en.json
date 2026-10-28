@@ -54,7 +54,7 @@
     "order": "Order on WhatsApp",
     "orderMsg": "Hello, I would like to order: {product}",
     "seasonT": "Seasonal crops",
-    "seasonD": "[Other products available by season: to be completed]",
+    "seasonD": "Other harvests come in with the seasons. Ask us what’s available right now.",
     "items": {
       "peppers": {
         "name": "Greenhouse bell peppers",
@@ -68,7 +68,9 @@
         "alt": "Watermelons in the field",
         "desc": "Grown in the open field and harvested in season, retail or wholesale."
       }
-    }
+    },
+    "seasonCta": "Check availability",
+    "seasonMsg": "Hello, which products are available right now?"
   },
   "cons": {
     "eb": "Farm consulting",
@@ -140,8 +142,8 @@
     "eb": "About us",
     "h2": "A word from the founder",
     "p": "TESA Enterprises Agro-Consulting Services is a farming company based in Yaoundé. We grow our own crops, in greenhouses and open fields, and put that experience to work for people starting farming projects.",
-    "quote": "[A short message from the founder: why he started TESA, what he wants for his clients]",
-    "sign": "[Founder name] · [Title], TESA Enterprises",
+    "quote": "When I started, there was plenty of theory but very little practical help from people who actually grow. At TESA, we farm first, then put that real experience to work for you. I don’t just want to be your consultant, I want to be your partner until you harvest.",
+    "sign": "Tchongo Emmanuel Stephen · Founder and CEO, TESA Enterprises",
     "valuesLabel": "Our values",
     "values": [
       "Freshness",
@@ -163,7 +165,7 @@
         "desc": "Hands-on training so your teams master good practices."
       }
     },
-    "photoAlt": "The founder of TESA Enterprises in the pepper greenhouse"
+    "photoAlt": "Tchongo Emmanuel Stephen, founder of TESA Enterprises, in the pepper greenhouse"
   },
   "avis": {
     "h2": "They trust us",
@@ -202,7 +204,7 @@
       },
       "address": {
         "k": "Address",
-        "v": "Yaoundé, Cameroon [neighbourhood]"
+        "v": "Yaoundé, Cameroon"
       }
     },
     "needs": {

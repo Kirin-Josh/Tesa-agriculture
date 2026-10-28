@@ -3,6 +3,7 @@
 
 export const site = {
   name: "TESA Enterprises Agro-Consulting Services",
+  founder: "Tchongo Emmanuel Stephen",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   // Digits only, with country code (wa.me format).
   whatsappNumber: "237680569614",

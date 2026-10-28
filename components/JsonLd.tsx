@@ -17,6 +17,7 @@ export default async function JsonLd({ locale }: { locale: Locale }) {
     image: `${site.url}${photos.greenhouse}`,
     address: { "@type": "PostalAddress", addressLocality: "Yaoundé", addressCountry: "CM" },
     areaServed: { "@type": "Country", name: "Cameroon" },
+    founder: { "@type": "Person", name: site.founder },
     ...(site.whatsappNumber && { telephone: `+${site.whatsappNumber}` }),
     ...(site.email && { email: site.email }),
     ...(site.facebookUrl && { sameAs: [site.facebookUrl] }),
