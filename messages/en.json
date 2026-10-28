@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "TESA Enterprises — Farm produce and agricultural consulting in Yaoundé",
+    "description": "Greenhouse bell peppers and open-field watermelons harvested in Yaoundé, and support for your farming projects: site assessment, design, greenhouse projects, management, follow-up and training.",
+    "ogAlt": "Rows of peppers in the TESA greenhouse"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "products": "Our products",
+    "consulting": "Farm consulting",
+    "work": "Our work",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Contact us",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "lang": "Language",
+    "skip": "Skip to content",
+    "home": "TESA Enterprises, home",
+    "logoAlt": "TESA Enterprises Agro-Consulting Services"
+  },
+  "langs": {
+    "fr": "Français",
+    "en": "English"
+  },
+  "hero": {
+    "cta1": "See our products",
+    "cta2": "Start my farming project",
+    "slogan": "Growing the future, harvesting excellence",
+    "h1a": "Harvests we’re proud of. ",
+    "h1em": "Know-how we share.",
+    "lead": "TESA Enterprises grows in greenhouses and open fields in Yaoundé, and helps others do the same.",
+    "stripLabel": "Photos of our crops"
+  },
+  "alt": {
+    "greenhouse": "Rows of peppers in the TESA greenhouse",
+    "harvest": "Watermelon harvest in the field",
+    "inside": "Inside the TESA greenhouse"
+  },
+  "paths": {
+    "label": "How can we help?",
+    "buyEb": "You’re buying",
+    "buyT": "Fresh produce",
+    "buyD": "For households, shopkeepers and resellers.",
+    "growEb": "You’re farming",
+    "growT": "Farm consulting",
+    "growD": "From site study to harvest."
+  },
+  "prod": {
+    "eb": "Our products",
+    "h2": "Picked ripe, delivered fresh.",
+    "sub": "Order straight from the farm, retail or wholesale, depending on the season.",
+    "order": "Order on WhatsApp",
+    "orderMsg": "Hello, I would like to order: {product}",
+    "seasonT": "Seasonal crops",
+    "seasonD": "[Other products available by season: to be completed]",
+    "items": {
+      "peppers": {
+        "name": "Greenhouse bell peppers",
+        "tag": "Greenhouse",
+        "alt": "Pepper plants in the greenhouse",
+        "desc": "Grown under cover for consistent quality, picked ripe.",
+        "info": "[Varieties · packaging · price or “on quote”]"
+      },
+      "watermelons": {
+        "name": "Watermelons",
+        "tag": "Open field",
+        "alt": "Watermelons in the field",
+        "desc": "Grown in the open field and harvested in season, retail or wholesale.",
+        "info": "[Harvest season · retail / wholesale]"
+      }
+    }
+  },
+  "cons": {
+    "eb": "Farm consulting",
+    "h2": "From idea to harvest, we work with you in the field.",
+    "lead": "We bring to your farm the methods we use in our own greenhouses and fields.",
+    "cta": "Request a site assessment",
+    "howEb": "How it works",
+    "services": {
+      "assessment": {
+        "title": "Site assessment",
+        "desc": "We study your land before you invest, so you grow the right crops in the right place."
+      },
+      "design": {
+        "title": "Design and setup",
+        "desc": "We design your farm with you, then set it up."
+      },
+      "greenhouse": {
+        "title": "Greenhouse projects",
+        "desc": "Greenhouses designed for your crop, from study to production."
+      },
+      "management": {
+        "title": "Farm project management",
+        "desc": "Planning, organisation and follow-up to keep your project on time and on budget."
+      },
+      "followup": {
+        "title": "Advice and follow-up",
+        "desc": "Regular visits and advice to keep your crops on track."
+      },
+      "training": {
+        "title": "Training and support",
+        "desc": "We train your teams in good practices and stay available when you need us."
+      }
+    },
+    "steps": {
+      "visit": {
+        "title": "Site visit",
+        "desc": "We come to see your land and listen to your project."
+      },
+      "design": {
+        "title": "Design",
+        "desc": "We give you a clear plan: crops, installations, timeline."
+      },
+      "setup": {
+        "title": "Setup",
+        "desc": "We set up the project with you, in the field."
+      },
+      "followup": {
+        "title": "Follow-up and training",
+        "desc": "We follow your crops and train your teams until harvest."
+      }
+    }
+  },
+  "work": {
+    "eb": "Our work",
+    "h2": "In the field, in pictures.",
+    "caps": {
+      "rows": "Preparing the greenhouse",
+      "harvest": "Watermelon harvest",
+      "truck": "Loading for delivery",
+      "team": "Team in the field",
+      "flower": "Pepper flowering",
+      "tending": "Tending the plants",
+      "greenhouse": "Pepper greenhouse",
+      "pepper": "Pepper plants",
+      "melons": "Watermelons in the field"
+    }
+  },
+  "about": {
+    "eb": "About us",
+    "h2": "A word from the founder",
+    "p": "TESA Enterprises Agro-Consulting Services is a farming company based in Yaoundé. We grow our own crops, in greenhouses and open fields, and put that experience to work for people starting farming projects.",
+    "photo": "[Founder photo]",
+    "quote": "[A short message from the founder: why he started TESA, what he wants for his clients]",
+    "sign": "[Founder name] · [Title], TESA Enterprises",
+    "valuesLabel": "Our values",
+    "values": ["Freshness", "Trust & transparency", "Sustainability", "Innovation"],
+    "pillars": {
+      "grow": {
+        "title": "We grow",
+        "desc": "Greenhouse peppers and open-field watermelons, in Yaoundé."
+      },
+      "advise": {
+        "title": "We advise",
+        "desc": "Site assessment, design, management and follow-up of your farming projects."
+      },
+      "train": {
+        "title": "We train",
+        "desc": "Hands-on training so your teams master good practices."
+      }
+    }
+  },
+  "avis": {
+    "h2": "They trust us",
+    "placeholder": {
+      "q": "“[A real testimonial from a customer or a farmer we supported]”",
+      "who": "[Name · City · Product bought or service]"
+    },
+    "items": []
+  },
+  "contact": {
+    "eb": "Contact",
+    "h2": "An order or a project? Let’s talk.",
+    "lead": "The fastest way: message us on WhatsApp. We also answer by phone and email.",
+    "wa": "Message us on WhatsApp",
+    "waMsg": "Hello TESA Enterprises, I’m contacting you from your website.",
+    "newTab": "(opens in a new tab)",
+    "formLabel": "Contact form",
+    "want": "I’d like to…",
+    "name": "Full name",
+    "phone": "Phone / WhatsApp",
+    "send": "Send my request",
+    "sendHint": "Your request opens in WhatsApp, ready to send.",
+    "errName": "Please enter your name.",
+    "errPhone": "Please enter your phone number.",
+    "rows": {
+      "phone": { "k": "Phone", "v": "[+237 … · +237 …]" },
+      "email": { "k": "Email", "v": "[email address]" },
+      "facebook": { "k": "Facebook", "v": "TESA Entreprise Agro-Consulting" },
+      "address": { "k": "Address", "v": "Yaoundé, Cameroon [neighbourhood]" }
+    },
+    "needs": {
+      "produits": "Buy products",
+      "conseil": "Get farm consulting",
+      "autre": "Something else"
+    },
+    "msg": {
+      "produits": "Which products and how much?",
+      "conseil": "Tell us about your project (crop, land, size)",
+      "autre": "Your message"
+    },
+    "formMsg": {
+      "hello": "Hello TESA Enterprises,",
+      "from": "Name: {name}",
+      "phone": "Phone: {phone}",
+      "need": "I’d like to: {need}"
+    }
+  },
+  "foot": {
+    "slogan": "Growing the future, harvesting excellence.",
+    "label": "Footer",
+    "explore": "Explore",
+    "reach": "Get in touch",
+    "city": "Yaoundé, Cameroon",
+    "rights": "© {year} TESA Enterprises Agro-Consulting Services"
+  }
+}

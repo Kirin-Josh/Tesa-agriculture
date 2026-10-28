@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "TESA Enterprises — Produits agricoles et conseil agricole à Yaoundé",
+    "description": "Poivrons de serre et pastèques de plein champ récoltés à Yaoundé, et accompagnement de vos projets agricoles : évaluation des sites, conception, serriculture, gestion, suivi et formation.",
+    "ogAlt": "Rangées de poivrons dans la serre TESA"
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "products": "Nos produits",
+    "consulting": "Conseil agricole",
+    "work": "Réalisations",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Nous contacter",
+    "menu": "Ouvrir le menu",
+    "close": "Fermer le menu",
+    "lang": "Langue",
+    "skip": "Aller au contenu",
+    "home": "TESA Enterprises, accueil",
+    "logoAlt": "TESA Enterprises Agro-Consulting Services"
+  },
+  "langs": {
+    "fr": "Français",
+    "en": "English"
+  },
+  "hero": {
+    "cta1": "Voir nos produits",
+    "cta2": "Lancer mon projet agricole",
+    "slogan": "Cultiver l’avenir, récolter l’excellence",
+    "h1a": "Des récoltes dont on est fiers. ",
+    "h1em": "Un savoir-faire que l’on partage.",
+    "lead": "TESA Enterprises cultive sous serre et en plein champ à Yaoundé, et accompagne celles et ceux qui veulent en faire autant.",
+    "stripLabel": "Photos de nos cultures"
+  },
+  "alt": {
+    "greenhouse": "Rangées de poivrons dans la serre TESA",
+    "harvest": "Récolte de pastèques au champ",
+    "inside": "Intérieur de la serre TESA"
+  },
+  "paths": {
+    "label": "Comment pouvons-nous vous aider ?",
+    "buyEb": "Vous achetez",
+    "buyT": "Des produits frais",
+    "buyD": "Pour les particuliers, commerçants et revendeurs.",
+    "growEb": "Vous cultivez",
+    "growT": "Un accompagnement agricole",
+    "growD": "De l’étude du site à la récolte."
+  },
+  "prod": {
+    "eb": "Nos produits",
+    "h2": "Récoltés à maturité, livrés frais.",
+    "sub": "Commandez directement auprès de la ferme, au détail ou en gros, selon la saison.",
+    "order": "Commander sur WhatsApp",
+    "orderMsg": "Bonjour, je souhaite commander : {product}",
+    "seasonT": "Cultures de saison",
+    "seasonD": "[Autres produits disponibles selon la saison : à compléter]",
+    "items": {
+      "peppers": {
+        "name": "Poivrons de serre",
+        "tag": "Sous serre",
+        "alt": "Poivrons sur pied dans la serre",
+        "desc": "Cultivés sous serre pour une qualité régulière, récoltés à maturité.",
+        "info": "[Variétés · conditionnement · prix ou « sur devis »]"
+      },
+      "watermelons": {
+        "name": "Pastèques",
+        "tag": "Plein champ",
+        "alt": "Pastèques au champ",
+        "desc": "Cultivées en plein champ et récoltées en saison, au détail ou en gros.",
+        "info": "[Saison de récolte · vente au détail / en gros]"
+      }
+    }
+  },
+  "cons": {
+    "eb": "Conseil agricole",
+    "h2": "De l’idée à la récolte, on vous accompagne sur le terrain.",
+    "lead": "Nous appliquons chez vous les méthodes que nous utilisons dans nos propres serres et champs.",
+    "cta": "Demander une évaluation de mon site",
+    "howEb": "Comment ça se passe",
+    "services": {
+      "assessment": {
+        "title": "Évaluation des sites",
+        "desc": "Nous étudions votre terrain avant que vous n’investissiez, pour choisir les bonnes cultures au bon endroit."
+      },
+      "design": {
+        "title": "Conception et mise en œuvre",
+        "desc": "Nous concevons votre exploitation avec vous, puis nous la mettons en place."
+      },
+      "greenhouse": {
+        "title": "Projets agricoles sur serre",
+        "desc": "Serriculture : des serres pensées pour votre culture, de l’étude à la production."
+      },
+      "management": {
+        "title": "Gestion des projets agricoles",
+        "desc": "Planification, organisation et suivi de votre projet pour tenir les délais et le budget."
+      },
+      "followup": {
+        "title": "Conseils et suivi des projets",
+        "desc": "Des visites et des conseils réguliers pour garder vos cultures sur la bonne voie."
+      },
+      "training": {
+        "title": "Formation et assistance",
+        "desc": "Nous formons vos équipes aux bonnes pratiques et restons disponibles quand vous en avez besoin."
+      }
+    },
+    "steps": {
+      "visit": {
+        "title": "Visite du site",
+        "desc": "Nous venons voir votre terrain et écouter votre projet."
+      },
+      "design": {
+        "title": "Conception",
+        "desc": "Nous vous proposons un plan clair : cultures, installations, calendrier."
+      },
+      "setup": {
+        "title": "Mise en œuvre",
+        "desc": "Nous installons le projet avec vous, sur le terrain."
+      },
+      "followup": {
+        "title": "Suivi et formation",
+        "desc": "Nous suivons les cultures et formons vos équipes jusqu’à la récolte."
+      }
+    }
+  },
+  "work": {
+    "eb": "Réalisations",
+    "h2": "Sur le terrain, en images.",
+    "caps": {
+      "rows": "Préparation de la serre",
+      "harvest": "Récolte de pastèques",
+      "truck": "Chargement pour la livraison",
+      "team": "Équipe au champ",
+      "flower": "Floraison du poivron",
+      "tending": "Entretien des plants",
+      "greenhouse": "Serre de poivrons",
+      "pepper": "Poivrons sur pied",
+      "melons": "Pastèques au champ"
+    }
+  },
+  "about": {
+    "eb": "À propos",
+    "h2": "Le mot du fondateur",
+    "p": "TESA Enterprises Agro-Consulting Services est une entreprise agricole basée à Yaoundé. Nous produisons nous-mêmes, sous serre et en plein champ, et nous mettons cette expérience au service des porteurs de projets agricoles.",
+    "photo": "[Photo du fondateur]",
+    "quote": "[Un court message du fondateur : pourquoi il a créé TESA, ce qu’il veut apporter à ses clients]",
+    "sign": "[Nom du fondateur] · [Titre], TESA Enterprises",
+    "valuesLabel": "Nos valeurs",
+    "values": ["Fraîcheur", "Confiance & transparence", "Durabilité", "Innovation"],
+    "pillars": {
+      "grow": {
+        "title": "Nous cultivons",
+        "desc": "Des poivrons sous serre et des pastèques en plein champ, à Yaoundé."
+      },
+      "advise": {
+        "title": "Nous conseillons",
+        "desc": "Évaluation des sites, conception, gestion et suivi de vos projets agricoles."
+      },
+      "train": {
+        "title": "Nous formons",
+        "desc": "Une formation sur le terrain pour que vos équipes maîtrisent les bonnes pratiques."
+      }
+    }
+  },
+  "avis": {
+    "h2": "Ils nous font confiance",
+    "placeholder": {
+      "q": "« [Témoignage réel d’un client ou d’un porteur de projet accompagné] »",
+      "who": "[Nom · Ville · Produit acheté ou service]"
+    },
+    "items": []
+  },
+  "contact": {
+    "eb": "Contact",
+    "h2": "Une commande, un projet ? Parlons-en.",
+    "lead": "Le plus rapide : écrivez-nous sur WhatsApp. Nous répondons aussi par téléphone et par e-mail.",
+    "wa": "Écrire sur WhatsApp",
+    "waMsg": "Bonjour TESA Enterprises, je vous contacte depuis votre site.",
+    "newTab": "(s’ouvre dans un nouvel onglet)",
+    "formLabel": "Formulaire de contact",
+    "want": "Je souhaite…",
+    "name": "Nom complet",
+    "phone": "Téléphone / WhatsApp",
+    "send": "Envoyer ma demande",
+    "sendHint": "Votre demande s’ouvre dans WhatsApp, prête à être envoyée.",
+    "errName": "Indiquez votre nom.",
+    "errPhone": "Indiquez votre numéro de téléphone.",
+    "rows": {
+      "phone": { "k": "Téléphone", "v": "[+237 … · +237 …]" },
+      "email": { "k": "E-mail", "v": "[adresse e-mail]" },
+      "facebook": { "k": "Facebook", "v": "TESA Entreprise Agro-Consulting" },
+      "address": { "k": "Adresse", "v": "Yaoundé, Cameroun [quartier / lieu-dit]" }
+    },
+    "needs": {
+      "produits": "Acheter des produits",
+      "conseil": "Un accompagnement agricole",
+      "autre": "Autre demande"
+    },
+    "msg": {
+      "produits": "Quels produits et quelles quantités ?",
+      "conseil": "Parlez-nous de votre projet (culture, terrain, surface)",
+      "autre": "Votre message"
+    },
+    "formMsg": {
+      "hello": "Bonjour TESA Enterprises,",
+      "from": "Nom : {name}",
+      "phone": "Téléphone : {phone}",
+      "need": "Je souhaite : {need}"
+    }
+  },
+  "foot": {
+    "slogan": "Cultiver l’avenir, récolter l’excellence.",
+    "label": "Pied de page",
+    "explore": "Explorer",
+    "reach": "Nous joindre",
+    "city": "Yaoundé, Cameroun",
+    "rights": "© {year} TESA Enterprises Agro-Consulting Services"
+  }
+}
