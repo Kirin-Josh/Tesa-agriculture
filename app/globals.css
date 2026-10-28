@@ -36,6 +36,7 @@
   --color-on-dark: #c9d6c4;
   --color-on-dark-2: #d6e2d2;
   --color-on-dark-3: #eef2e9;
+  --color-error: #b3261e;
 
   --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }

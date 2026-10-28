@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { site } from "@/lib/site";
 import PageEffects from "@/components/PageEffects";
@@ -41,11 +41,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  // Only the contact form translates on the client; keep the rest of the copy server-side.
+  const { contact } = await getMessages();
 
   return (
     <html lang={locale} className={`${fraunces.variable} ${manrope.variable}`}>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={{ contact }}>
           {children}
           <PageEffects />
         </NextIntlClientProvider>
