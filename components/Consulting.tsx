@@ -7,7 +7,7 @@ export default function Consulting() {
   const t = useTranslations("cons");
 
   return (
-    <section id="conseil" aria-labelledby="conseil-h" className="bg-forest-deep text-on-dark-3">
+    <section id="conseil" aria-labelledby="conseil-h" className="on-dark bg-forest-deep text-on-dark-3">
       <div className="mx-auto flex max-w-[1240px] flex-col gap-12 px-10 py-[104px] phone:px-5 phone:py-16">
         <div className="reveal flex flex-wrap items-end justify-between gap-10">
           <div className="flex max-w-[680px] flex-col gap-3.5">

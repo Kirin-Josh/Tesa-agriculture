@@ -8,7 +8,7 @@ import { waUrl } from "@/lib/whatsapp";
 type Errors = { name?: string; phone?: string };
 
 const inputClass =
-  "min-h-12 rounded-xl border-[1.5px] border-line-strong bg-white px-3.5 text-base font-normal text-ink aria-invalid:border-error";
+  "min-h-12 rounded-xl border-[1.5px] border-input-line bg-white px-3.5 text-base font-normal text-ink aria-invalid:border-error";
 const labelClass = "flex flex-col gap-2 text-sm font-semibold text-ink-nav";
 const errorClass = "text-sm font-semibold text-error";
 

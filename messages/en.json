@@ -2,7 +2,8 @@
   "meta": {
     "title": "TESA Enterprises — Farm produce and agricultural consulting in Yaoundé",
     "description": "Greenhouse bell peppers and open-field watermelons harvested in Yaoundé, and support for your farming projects: site assessment, design, greenhouse projects, management, follow-up and training.",
-    "ogAlt": "Rows of peppers in the TESA greenhouse"
+    "ogAlt": "Rows of peppers in the TESA greenhouse",
+    "ogLocale": "en_GB"
   },
   "nav": {
     "label": "Main navigation",
@@ -145,7 +146,12 @@
     "quote": "[A short message from the founder: why he started TESA, what he wants for his clients]",
     "sign": "[Founder name] · [Title], TESA Enterprises",
     "valuesLabel": "Our values",
-    "values": ["Freshness", "Trust & transparency", "Sustainability", "Innovation"],
+    "values": [
+      "Freshness",
+      "Trust & transparency",
+      "Sustainability",
+      "Innovation"
+    ],
     "pillars": {
       "grow": {
         "title": "We grow",
@@ -185,10 +191,22 @@
     "errName": "Please enter your name.",
     "errPhone": "Please enter your phone number.",
     "rows": {
-      "phone": { "k": "Phone", "v": "[+237 … · +237 …]" },
-      "email": { "k": "Email", "v": "[email address]" },
-      "facebook": { "k": "Facebook", "v": "TESA Entreprise Agro-Consulting" },
-      "address": { "k": "Address", "v": "Yaoundé, Cameroon [neighbourhood]" }
+      "phone": {
+        "k": "Phone",
+        "v": "[+237 … · +237 …]"
+      },
+      "email": {
+        "k": "Email",
+        "v": "[email address]"
+      },
+      "facebook": {
+        "k": "Facebook",
+        "v": "TESA Entreprise Agro-Consulting"
+      },
+      "address": {
+        "k": "Address",
+        "v": "Yaoundé, Cameroon [neighbourhood]"
+      }
     },
     "needs": {
       "produits": "Buy products",
@@ -214,5 +232,10 @@
     "reach": "Get in touch",
     "city": "Yaoundé, Cameroon",
     "rights": "© {year} TESA Enterprises Agro-Consulting Services"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page doesn’t exist or has moved.",
+    "back": "Back to home"
   }
 }

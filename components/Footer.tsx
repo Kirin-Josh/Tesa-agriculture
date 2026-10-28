@@ -10,7 +10,7 @@ export default function Footer() {
   const contact = useTranslations("contact");
 
   return (
-    <footer className="bg-forest-deep text-on-dark">
+    <footer className="on-dark bg-forest-deep text-on-dark">
       <div className="mx-auto flex max-w-[1240px] flex-col gap-9 px-10 pt-14 pb-7 phone:px-5">
         <div className="flex flex-wrap justify-between gap-x-16 gap-y-8">
           <div className="flex max-w-[380px] flex-[1_1_280px] flex-col gap-3">

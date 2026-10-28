@@ -11,6 +11,7 @@ import AboutB from "@/components/AboutB";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 
 export default function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -18,6 +19,7 @@ export default function Home({ params }: PageProps<"/[locale]">) {
 
   return (
     <>
+      <JsonLd locale={locale as Locale} />
       <Header />
       <main id="accueil">
         <HeroB />

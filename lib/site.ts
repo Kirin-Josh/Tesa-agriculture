@@ -11,7 +11,7 @@ export const site = {
   email: "",
   // [À confirmer] full Facebook page URL.
   facebookUrl: "",
-} as const;
+};
 
 export const photos = {
   greenhouse: "/web-21.jpg",

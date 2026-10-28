@@ -2,7 +2,8 @@
   "meta": {
     "title": "TESA Enterprises — Produits agricoles et conseil agricole à Yaoundé",
     "description": "Poivrons de serre et pastèques de plein champ récoltés à Yaoundé, et accompagnement de vos projets agricoles : évaluation des sites, conception, serriculture, gestion, suivi et formation.",
-    "ogAlt": "Rangées de poivrons dans la serre TESA"
+    "ogAlt": "Rangées de poivrons dans la serre TESA",
+    "ogLocale": "fr_FR"
   },
   "nav": {
     "label": "Navigation principale",
@@ -145,7 +146,12 @@
     "quote": "[Un court message du fondateur : pourquoi il a créé TESA, ce qu’il veut apporter à ses clients]",
     "sign": "[Nom du fondateur] · [Titre], TESA Enterprises",
     "valuesLabel": "Nos valeurs",
-    "values": ["Fraîcheur", "Confiance & transparence", "Durabilité", "Innovation"],
+    "values": [
+      "Fraîcheur",
+      "Confiance & transparence",
+      "Durabilité",
+      "Innovation"
+    ],
     "pillars": {
       "grow": {
         "title": "Nous cultivons",
@@ -185,10 +191,22 @@
     "errName": "Indiquez votre nom.",
     "errPhone": "Indiquez votre numéro de téléphone.",
     "rows": {
-      "phone": { "k": "Téléphone", "v": "[+237 … · +237 …]" },
-      "email": { "k": "E-mail", "v": "[adresse e-mail]" },
-      "facebook": { "k": "Facebook", "v": "TESA Entreprise Agro-Consulting" },
-      "address": { "k": "Adresse", "v": "Yaoundé, Cameroun [quartier / lieu-dit]" }
+      "phone": {
+        "k": "Téléphone",
+        "v": "[+237 … · +237 …]"
+      },
+      "email": {
+        "k": "E-mail",
+        "v": "[adresse e-mail]"
+      },
+      "facebook": {
+        "k": "Facebook",
+        "v": "TESA Entreprise Agro-Consulting"
+      },
+      "address": {
+        "k": "Adresse",
+        "v": "Yaoundé, Cameroun [quartier / lieu-dit]"
+      }
     },
     "needs": {
       "produits": "Acheter des produits",
@@ -214,5 +232,10 @@
     "reach": "Nous joindre",
     "city": "Yaoundé, Cameroun",
     "rights": "© {year} TESA Enterprises Agro-Consulting Services"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Cette page n’existe pas ou a été déplacée.",
+    "back": "Retour à l’accueil"
   }
 }

@@ -40,7 +40,7 @@ export default function HeroB() {
         </div>
       </div>
 
-      <div className="marquee-wrap rise d5 overflow-hidden" role="region" aria-label={t("stripLabel")}>
+      <div className="marquee-wrap rise d5 overflow-hidden" role="region" aria-label={t("stripLabel")} tabIndex={0}>
         <div className="marquee flex w-max gap-[18px] px-[9px]">
           {copies.map((isCopy) =>
             strip.map((id, i) => (

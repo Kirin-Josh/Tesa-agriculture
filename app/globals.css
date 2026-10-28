@@ -37,6 +37,7 @@
   --color-on-dark-2: #d6e2d2;
   --color-on-dark-3: #eef2e9;
   --color-error: #b3261e;
+  --color-input-line: #9a917e; /* darker than line-strong so fields reach 3:1 */
 
   --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -45,21 +46,9 @@
   from { opacity: 0; transform: translateY(22px); }
   to { opacity: 1; transform: none; }
 }
-@keyframes unveil {
-  from { clip-path: inset(0 0 0 100%); }
-  to { clip-path: inset(0 0 0 0); }
-}
 @keyframes pop {
   from { opacity: 0; transform: translateY(30px) scale(0.94); }
   to { opacity: 1; transform: none; }
-}
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes kenburns {
-  from { transform: scale(1.08); }
-  to { transform: scale(1); }
 }
 @keyframes marquee {
   to { transform: translateX(-50%); }
@@ -91,8 +80,12 @@
     color: var(--color-forest-deep);
   }
   :focus-visible {
-    outline: 3px solid var(--color-gold);
+    outline: 3px solid var(--color-forest);
     outline-offset: 3px;
+  }
+  /* Gold ring where the background is dark green (forest ring would vanish). */
+  .on-dark :focus-visible {
+    outline-color: var(--color-gold);
   }
 }
 
@@ -104,10 +97,7 @@
   .d3 { animation-delay: 0.32s; }
   .d4 { animation-delay: 0.44s; }
   .d5 { animation-delay: 0.56s; }
-  .unveil { animation: unveil 1.2s cubic-bezier(0.7, 0, 0.2, 1) 0.2s both; }
-  .unveil img { animation: kenburns 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both; }
   .pop { animation: pop 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.75s both; }
-  .bob { animation: bob 5s ease-in-out 1.6s infinite; }
   .marquee { animation: marquee 60s linear infinite; }
   .marquee-wrap:hover .marquee,
   .marquee-wrap:focus-within .marquee { animation-play-state: paused; }
@@ -165,4 +155,7 @@
   }
   .io .reveal { opacity: 1; }
   .io .line-grow { transform: none; }
+  /* Photo strip: no auto-scroll, so let people scroll it themselves and drop the loop copy. */
+  .marquee-wrap { overflow-x: auto; }
+  .marquee [aria-hidden="true"] { display: none; }
 }
