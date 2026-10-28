@@ -73,9 +73,14 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  /* Keep section tops clear of the sticky header (≈97px tall). */
+  /* Keep section tops clear of the sticky header (≈97px tall, ≈81px on phones). */
   section[id] {
     scroll-margin-top: 96px;
+  }
+  @media (max-width: 640px) {
+    section[id] {
+      scroll-margin-top: 80px;
+    }
   }
   a {
     color: var(--color-forest);

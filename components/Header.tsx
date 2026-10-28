@@ -25,7 +25,7 @@ export default function Header() {
           className="mx-auto flex max-w-[1240px] items-center justify-between gap-6 px-10 py-2.5 phone:px-5"
         >
           <a href="#accueil" aria-label={t("home")} className="flex shrink-0 items-center">
-            <Image src="/logo-wide.jpg" alt={t("logoAlt")} width={393} height={229} loading="eager" className="block h-[76px] w-auto" />
+            <Image src="/logo-wide.jpg" alt={t("logoAlt")} width={393} height={229} loading="eager" className="block h-[76px] w-auto phone:h-[60px]" />
           </a>
 
           <div className="flex items-center gap-7 text-[15px] tab:hidden">
