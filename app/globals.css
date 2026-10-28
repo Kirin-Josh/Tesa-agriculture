@@ -1,125 +1,165 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* Breakpoints from the design (max-width, desktop-first). Declared largest
+   first so the smaller ones win when several match. */
+@custom-variant lap (@media (max-width: 1100px));
+@custom-variant tab (@media (max-width: 980px));
+@custom-variant phone (@media (max-width: 640px));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
 }
 
-:root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --primary-background: #2D5A27;
-  --secondary-background: #D4A017;
+@theme {
+  --color-cream: #f5f0e4;
+  --color-line: #e6dfcf;
+  --color-line-strong: #d9d1be;
+  --color-line-soft: #efe8d8;
+  --color-photo: #dcd3bf;
+  --color-forest: #1d4a2a;
+  --color-forest-deep: #12301c;
+  --color-forest-card: #1a3d25;
+  --color-forest-border: #2b5537;
+  --color-forest-icon: #24502f;
+  --color-forest-hover: #2e6238;
+  --color-sage: #e8efdf;
+  --color-chip-line: #c9d3bf;
+  --color-gold: #d4a017;
+  --color-gold-text: #8a6508;
+  --color-gold-on-dark: #e9c25a;
+  --color-ink: #1b2117;
+  --color-ink-nav: #2b3327;
+  --color-ink-2: #3b4436;
+  --color-ink-3: #4a5345;
+  --color-muted: #6b6455;
+  --color-on-dark: #c9d6c4;
+  --color-on-dark-2: #d6e2d2;
+  --color-on-dark-3: #eef2e9;
+  --color-error: #b3261e;
+  --color-input-line: #9a917e; /* darker than line-strong so fields reach 3:1 */
+
+  --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-/* global.css */
-.navbar {
-  border-color: var(--primary-background);
+@keyframes rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: none; }
 }
-.navbarItems {
-  background-color: var(--primary-background);
+@keyframes pop {
+  from { opacity: 0; transform: translateY(30px) scale(0.94); }
+  to { opacity: 1; transform: none; }
 }
-.button {
- background-color: var(--primary-background);
- color: white;
+@keyframes marquee {
+  to { transform: translateX(-50%); }
 }
-.textColor{
-  color: var(--primary-background);
+@keyframes grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+@keyframes sway {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  html {
+    -webkit-text-size-adjust: 100%;
   }
   body {
-    @apply bg-background text-foreground;
+    margin: 0;
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
+  /* Keep section tops clear of the sticky header (≈97px tall). */
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+  a {
+    color: var(--color-forest);
+  }
+  a:hover {
+    color: var(--color-forest-deep);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-forest);
+    outline-offset: 3px;
+  }
+  /* Gold ring where the background is dark green (forest ring would vanish). */
+  .on-dark :focus-visible {
+    outline-color: var(--color-gold);
+  }
+}
+
+/* Motion & hover classes copied from the design's <style> */
+@layer components {
+  .rise { animation: var(--animate-rise); }
+  .d1 { animation-delay: 0.08s; }
+  .d2 { animation-delay: 0.2s; }
+  .d3 { animation-delay: 0.32s; }
+  .d4 { animation-delay: 0.44s; }
+  .d5 { animation-delay: 0.56s; }
+  .pop { animation: pop 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.75s both; }
+  .marquee { animation: marquee 60s linear infinite; }
+  .marquee-wrap:hover .marquee,
+  .marquee-wrap:focus-within .marquee { animation-play-state: paused; }
+  .sway { transform-origin: 50% 100%; animation: sway 6s ease-in-out infinite; }
+
+  .btn { transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px rgba(18, 48, 28, 0.45); }
+  .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 16px 32px -20px rgba(18, 48, 28, 0.4); }
+  .zoom img { transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  .zoom:hover img { transform: scale(1.05); }
+  .svc { transition: border-color 0.3s ease, transform 0.3s ease; }
+  .svc:hover { border-color: var(--color-gold); transform: translateY(-4px); }
+  .svc .ic { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.3s ease; }
+  .svc:hover .ic { transform: rotate(-8deg) scale(1.08); background-color: var(--color-forest-hover); }
+  .navlink {
+    text-decoration: none;
+    color: var(--color-ink-nav);
+    font-weight: 500;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .navlink:hover { color: var(--color-forest); border-bottom-color: var(--color-gold); }
+  .arrow { display: inline-block; transition: transform 0.2s ease; }
+  a:hover .arrow { transform: translateX(5px); }
+
+  /* Scroll-driven reveal; PageEffects adds .io + .in where view() is unsupported. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+    .line-grow {
+      transform-origin: 0 50%;
+      animation: grow linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 40%;
+    }
+  }
+  @supports not (animation-timeline: view()) {
+    .io .reveal { opacity: 0; }
+    .io .reveal.in { animation: var(--animate-rise); }
+    .io .line-grow { transform-origin: 0 50%; transform: scaleX(0); }
+    .io .line-grow.in { animation: grow 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .io .reveal { opacity: 1; }
+  .io .line-grow { transform: none; }
+  /* Photo strip: no auto-scroll, so let people scroll it themselves and drop the loop copy. */
+  .marquee-wrap { overflow-x: auto; }
+  .marquee [aria-hidden="true"] { display: none; }
 }
