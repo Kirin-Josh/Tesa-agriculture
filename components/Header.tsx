@@ -12,7 +12,7 @@ export default function Header() {
   const links = navLinks.map((l) => ({ href: `#${l.id}`, label: t(l.key) }));
 
   return (
-    <header className="relative z-5 border-b border-line bg-white">
+    <header className="sticky top-0 z-50 border-b border-line bg-white">
       <a
         href="#accueil"
         className="absolute top-2 left-2 z-10 -translate-y-[200%] rounded-full bg-forest px-4 py-2 font-semibold text-white focus:translate-y-0 hover:text-white"

@@ -14,8 +14,7 @@ export const site = {
   ],
   // [À confirmer] e.g. "contact@…"; not shown in JSON-LD until set.
   email: "",
-  // [À confirmer] full Facebook page URL.
-  facebookUrl: "",
+  facebookUrl: "https://www.facebook.com/tchongo.emmanuel.3",
 };
 
 export const photos = {
