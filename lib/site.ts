@@ -27,8 +27,8 @@ export const photos = {
 } as const;
 
 export type PhotoId = keyof typeof photos;
-
-export const sections = ["produits", "conseil", "realisations", "apropos", "contact"] as const;
+// Photos with a caption in messages → work.caps
+export type CaptionedPhoto = Exclude<PhotoId, "worker">;
 
 export const navLinks = [
   { id: "produits", key: "products" },
@@ -38,7 +38,7 @@ export const navLinks = [
   { id: "contact", key: "contact" },
 ] as const;
 
-export const strip: PhotoId[] = [
+export const strip: CaptionedPhoto[] = [
   "greenhouse", "harvest", "pepper", "team", "truck", "melons", "rows", "tending", "flower",
 ];
 
