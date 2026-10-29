@@ -4,7 +4,13 @@
 export const site = {
   name: "TESA Enterprises Agro-Consulting Services",
   founder: "Tchongo Emmanuel Stephen",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  // On Vercel, falls back to the production domain it sets at build time, so
+  // link previews (Open Graph) get an absolute, reachable image URL.
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000"),
   // Digits only, with country code (wa.me format).
   whatsappNumber: "237680569614",
   // Shown in the contact list as tel: links; the first one is also on WhatsApp.
@@ -66,17 +72,20 @@ export const services = [
 
 export const steps = ["visit", "design", "setup", "followup"] as const;
 
+// Desktop is 4 columns: the first row ends with a stack of two short tiles, the
+// second starts with one (col pins a tile to a desktop column). Order also fills
+// the 2-column tablet grid without holes; phones get a swipeable row.
 export const gallery = [
   { photo: "rows", rows: 2 },
   { photo: "harvest", rows: 2 },
   { photo: "truck", rows: 2 },
   { photo: "tending", rows: 1 },
   { photo: "plantCare", rows: 1 },
-  { photo: "pepperYellow", rows: 2 },
-  { photo: "pepperGreen", rows: 2 },
-  { photo: "pepperRed", rows: 2 },
-  { photo: "team", rows: 1 },
-  { photo: "flower", rows: 1 },
+  { photo: "pepperYellow", rows: 2, col: 2 },
+  { photo: "pepperGreen", rows: 2, col: 3 },
+  { photo: "pepperRed", rows: 2, col: 4 },
+  { photo: "team", rows: 1, col: 1 },
+  { photo: "flower", rows: 1, col: 1 },
 ] as const;
 
 export const pillars = [
