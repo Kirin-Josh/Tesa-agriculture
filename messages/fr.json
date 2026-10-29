@@ -135,7 +135,10 @@
       "tending": "Entretien des plants",
       "greenhouse": "Serre de poivrons",
       "pepper": "Poivrons sur pied",
-      "melons": "Pastèques au champ"
+      "melons": "Pastèques au champ",
+      "pepperYellow": "Poivrons jaunes à maturité",
+      "pepperGreen": "Poivrons verts en sacs de culture",
+      "pepperRed": "Poivrons rouges sous serre"
     }
   },
   "about": {

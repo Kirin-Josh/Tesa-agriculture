@@ -13,7 +13,7 @@ export const site = {
     { tel: "+237697237534", label: "+237 697 23 75 34" },
   ],
   // [À confirmer] e.g. "contact@…"; not shown in JSON-LD until set.
-  email: "",
+  email: "tchongoemmanuel65@gmail.com",
   facebookUrl: "https://www.facebook.com/tchongo.emmanuel.3",
 };
 
@@ -28,6 +28,9 @@ export const photos = {
   team: "/agro-26.jpg",
   flower: "/web-24.jpg",
   tending: "/agro-21.jpg",
+  pepperYellow: "/pepper-yellow.jpg",
+  pepperGreen: "/pepper-green.jpg",
+  pepperRed: "/pepper-red.jpg",
 } as const;
 
 export type PhotoId = keyof typeof photos;
@@ -69,6 +72,9 @@ export const gallery = [
   { photo: "team", rows: 1 },
   { photo: "flower", rows: 1 },
   { photo: "tending", rows: 1 },
+  { photo: "pepperYellow", rows: 2 },
+  { photo: "pepperGreen", rows: 2 },
+  { photo: "pepperRed", rows: 2 },
 ] as const;
 
 export const pillars = [

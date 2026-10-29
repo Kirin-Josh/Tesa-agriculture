@@ -135,7 +135,10 @@
       "tending": "Tending the plants",
       "greenhouse": "Pepper greenhouse",
       "pepper": "Pepper plants",
-      "melons": "Watermelons in the field"
+      "melons": "Watermelons in the field",
+      "pepperYellow": "Ripening yellow peppers",
+      "pepperGreen": "Green peppers in grow bags",
+      "pepperRed": "Red peppers in the greenhouse"
     }
   },
   "about": {
