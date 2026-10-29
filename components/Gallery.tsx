@@ -12,7 +12,7 @@ export default function Gallery() {
         <div className="reveal flex max-w-[640px] flex-col gap-3">
           <SectionHeading id="real-h" eyebrow={t("eb")} title={t("h2")} />
         </div>
-        <div className="grid auto-rows-[200px] grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-3.5">
+        <div className="grid grid-flow-row-dense auto-rows-[200px] grid-cols-4 gap-3.5 tab:grid-cols-2 phone:grid-cols-1">
           {gallery.map((g) => (
             <figure
               key={g.photo}
@@ -22,7 +22,7 @@ export default function Gallery() {
                 src={photos[g.photo]}
                 alt={t(`caps.${g.photo}`)}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px"
+                sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 300px"
                 className="object-cover"
               />
               <figcaption
