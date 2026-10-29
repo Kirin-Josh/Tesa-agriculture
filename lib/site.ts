@@ -27,7 +27,8 @@ export const photos = {
   truck: "/agro-20.jpg",
   team: "/agro-26.jpg",
   flower: "/web-24.jpg",
-  tending: "/plant-care.jpg",
+  tending: "/agro-21.jpg",
+  plantCare: "/plant-care.jpg",
   pepperYellow: "/pepper-yellow.jpg",
   pepperGreen: "/pepper-green.jpg",
   pepperRed: "/pepper-red.jpg",
@@ -69,12 +70,13 @@ export const gallery = [
   { photo: "rows", rows: 2 },
   { photo: "harvest", rows: 2 },
   { photo: "truck", rows: 2 },
-  { photo: "team", rows: 1 },
-  { photo: "flower", rows: 1 },
-  { photo: "tending", rows: 2 },
+  { photo: "tending", rows: 1 },
+  { photo: "plantCare", rows: 1 },
   { photo: "pepperYellow", rows: 2 },
   { photo: "pepperGreen", rows: 2 },
   { photo: "pepperRed", rows: 2 },
+  { photo: "team", rows: 1 },
+  { photo: "flower", rows: 1 },
 ] as const;
 
 export const pillars = [
